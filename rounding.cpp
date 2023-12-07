@@ -11,7 +11,7 @@
 #include <sstream>
 #include <string>
 
-void RoundDecimal(double &decimal, int numPlace) {
+void RoundDecimal(double const &decimal, int numPlace) {
     // round decimal number to user's preference
     decimal = decimal * pow(10, numPlace) + 0.5;
     decimal = static_cast<int>(decimal);
